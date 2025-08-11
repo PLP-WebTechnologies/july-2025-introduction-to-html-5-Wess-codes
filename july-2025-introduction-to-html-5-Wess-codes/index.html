@@ -3,40 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Basic HTML5 Semantic Page</title>
-  <meta name="description" content="A simple semantic HTML5 web page demonstrating accessibility and SEO best practices." />
+  <title>My Sample Semantic HTML5 Page</title>
+  <meta name="description" content="A simple, semantic HTML5 page demonstrating accessibility and SEO best practices." />
+  <meta name="keywords" content="HTML5, Accessibility, SEO, Semantic, Web Design" />
+  <meta name="author" content="Wess Waithaka" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Semantic Webpage</h1>
-    <nav aria-label="Primary Navigation">
+  <header role="banner">
+    <h1>Welcome to My Semantic HTML5 Page</h1>
+    <nav role="navigation" aria-label="Main Navigation">
       <ul>
-        <li><a href="#main-content">Main Content</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main-content">
-    <article>
-      <header>
-        <h2>Understanding Semantic HTML5</h2>
-      </header>
-      <p>Semantic HTML5 elements clearly describe their meaning in a human- and machine-readable way. This improves accessibility and SEO.</p>
-    </article>
+  <main role="main">
+    <section id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Introduction</h2>
+      <p>This page demonstrates a well-structured HTML5 document focused on accessibility and SEO.</p>
+    </section>
 
-    <section id="about-section" aria-labelledby="about-heading">
-      <h2 id="about-heading">About This Page</h2>
-      <p>This page uses semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to structure content.</p>
+    <section id="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Features</h2>
+      <article aria-labelledby="feature1-heading">
+        <h3 id="feature1-heading">Semantic Structure</h3>
+        <p>Uses appropriate HTML5 elements to provide clear document structure.</p>
+      </article>
+      <article aria-labelledby="feature2-heading">
+        <h3 id="feature2-heading">Accessibility</h3>
+        <p>Includes ARIA roles and landmarks to assist screen readers and navigation aids.</p>
+      </article>
+      <article aria-labelledby="feature3-heading">
+        <h3 id="feature3-heading">SEO Best Practices</h3>
+        <p>Optimized with meta tags, heading hierarchy, and descriptive content.</p>
+      </article>
     </section>
   </main>
 
-  <footer id="contact-section">
-    <h2>Contact Information</h2>
+  <footer role="contentinfo" id="contact">
+    <h2>Contact</h2>
     <address>
-      Email: <a href="mailto:info@example.com">info@example.com</a><br />
-      Phone: <a href="tel:+1234567890">+1 (234) 567-890</a>
+      Written by <a href="mailto:wess@example.com">Wess Waithaka</a>.<br />
+      Visit us at:<br />
+      123 Semantic St.<br />
+      Nairobi, Kenya
     </address>
   </footer>
 </body>
