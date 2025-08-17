@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Basic HTML5 Semantic Page</title>
-  <meta name="description" content="A simple semantic HTML5 web page demonstrating accessibility and SEO best practices." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn the basics of HTML5, accessibility, and SEO through a well-structured semantic web page.">
+  <title>HTML5 Accessibility & SEO Basics</title>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to My Semantic Webpage</h1>
-    <nav aria-label="Primary Navigation">
+    <h1>Welcome to HTML5 Essentials</h1>
+    <nav aria-label="Main navigation">
       <ul>
-        <li><a href="#main-content">Main Content</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main-content">
-    <article>
-      <header>
-        <h2>Semantic HTML5</h2>
-      </header>
-      <p>Semantic HTML5 elements clearly describe their meaning in a human- and machine-readable way. This improves accessibility and SEO.</p>
-    </article>
+  <main>
+    <section id="about">
+      <h2>About This Page</h2>
+      <p>This page demonstrates how to use semantic HTML5 elements to create accessible and SEO-friendly web content. It is structured to support screen readers and search engine crawlers alike.</p>
+    </section>
 
-    <section id="about-section" aria-labelledby="about-heading">
-      <h2 id="about-heading">About This Page</h2>
-      <p>This page uses semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to structure content.</p>
+    <section id="features">
+      <h2>Key Features</h2>
+      <article>
+        <h3>Semantic Structure</h3>
+        <p>Using elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> improves both readability and accessibility.</p>
+      </article>
+      <article>
+        <h3>Accessibility</h3>
+        <p>Landmark roles and descriptive links help users navigate with assistive technologies.</p>
+      </article>
+      <article>
+        <h3>SEO Optimization</h3>
+        <p>Proper heading hierarchy and metadata ensure better visibility in search engines.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For more information, reach out via <a href="mailto:info@example.com">email</a>.</p>
     </section>
   </main>
 
-  <footer id="contact-section">
-    <h2>Contact Information</h2>
-    <address>
-      Email: <a href="mailto:info@example.com">wess@gmail.com</a><br />
-      Phone: <a href="tel:+1234567890">0790 470 430</a>
-    </address>
+  <footer>
+    <p>&copy; 2025 HTML5 Learning Hub. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
